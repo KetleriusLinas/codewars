@@ -39,17 +39,17 @@ function positiveSum(arr) {
 
 console.log('--------basic data tyoes: Object- NESIGAVO--------');
 
-// // neveike nes pramazinau taska uzbaigiant sakini. (return)
-// function animal(obj){
-//     const animal = {
-//       name: 'dog',
-//       legs: 4,
-//       color: 'white',
-//     };
-//     return `This ${animal.color} ${animal.name} has ${animal.legs} legs. `;
-//   };
-  
-//   console.log(animal())
+// const animal = obj => {name: 'dog', legs: 4, color: 'white'};
+
+
+// // function animal(obj){
+// //   let animal = {name:"dog",legs:4,color:"white"}
+// //     };
+// //     return obj;;
+
+//   console.log(animal());
+//   console.log(animal());  
+//   console.log(animal());
 
   
 //   function animal1(obj){
@@ -270,7 +270,53 @@ function pickIt(arr) {
   return [odd, even];
 }
 
-console.log(pickIt([1]));        
+// console.log(pickIt([1]));        
 // console.log(pickIt([1, 2]));     
-// console.log(pickIt([1, 2, 3]));
+console.log(pickIt([1, 2, 3, 8]));
 // console.log(pickIt([10, 20, 30]));
+
+function firstToLast(str,c){
+  //coding here..
+  
+}
+
+console.log(firstToLast('ababc', 'a'));
+console.log(firstToLast('ababc', 'c'));
+console.log(firstToLast('ababc', 'd'));
+console.log('--------------------------');
+
+const stringToNumber = function(str){
+
+  return parseInt(str);
+}
+
+console.log('1234');
+console.log('605');
+console.log('1405');
+console.log('-7');
+
+console.log('--------------------------');
+
+// Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+function createPhoneNumber(numbers){
+  // const parts = numbers.slice(0, 3);
+   const a = numbers.toString();
+   const parts = numbers.split(number[2]);
+   const antraDalis = parts[1].split(createPhoneNumber[2]);
+console.log(antraDalis);
+    return numbers;
+}
+
+
+console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), "(123) 456-7890");
+// console.log(createPhoneNumber([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]), "(111) 111-1111");
+// console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), "(123) 456-7890");
+
+// function correctSentence (text) {
+//   const parts = text.split(': '); // atskiriame teksta nuo sios vietos
+//   const names = parts[1] // isivedam antra teksto dali i kintamaji
+//       .slice(0, -1)           // , nupjaunam (taska), 
+//       .toLowerCase()          // paverciam viska mazosiom raidemm
+//       .split(', ');           // atskiriam ( per kableli, tarpa). Jau teksta esam pasiruose
+//   console.log(parts);
+//   console.log(names);
