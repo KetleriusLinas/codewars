@@ -224,7 +224,53 @@ const quarterOf = (month) => {
   console.log(quarterOf(3));
   console.log(quarterOf(8));
   console.log(quarterOf(11));
-  console.log('-----------isBetween---------------');
+  console.log('-----------isBetween--------nepadariau-------');
+
+  function between(a, b) {
+    // your code here
+  }
+  console.log('-----------if else operator---------------');
+
+  // Complete function saleHotdogs/SaleHotDogs/sale_hotdogs, function accepts 1 parameter:n, n is the number of hotdogs a customer will buy, different numbers have different prices (refer to the following table), return how much money will the customer spend to buy that number of hotdogs.
+
+function saleHotdogs(n){
+    if (n < 5) {
+      return n * 100;
+    }    
+    if (n <= 5 || n < 10) {
+      return n * 95;
+    }
+    if (n >= 10) {
+      return n * 90;
+    }
+}
+console.log(saleHotdogs(1));
+console.log(saleHotdogs(4));
+// console.log(saleHotdogs(5));
+// console.log(saleHotdogs(9));
+// console.log(saleHotdogs(10));
+// console.log(saleHotdogs(100));
+
+console.log('-----------loop statment--------nekazka-------');
 
 
-  
+function pickIt(arr) {
+  let odd = [];
+  let even = [];
+
+  // Loop through the array and check each element
+  for (let num of arr) {
+      if (num % 2 === 0) {
+          even.push(num);  // Push even numbers into 'even' array
+      } else {
+          odd.push(num);   // Push odd numbers into 'odd' array
+      }
+  }
+
+  return [odd, even];
+}
+
+console.log(pickIt([1]));        
+// console.log(pickIt([1, 2]));     
+// console.log(pickIt([1, 2, 3]));
+// console.log(pickIt([10, 20, 30]));
