@@ -295,7 +295,7 @@ console.log('605');
 console.log('1405');
 console.log('-7');
 
-console.log('--------------------------');
+console.log('------------SPRESTI--------------');
 
 // Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
 function createPhoneNumber(numbers){
@@ -303,12 +303,12 @@ function createPhoneNumber(numbers){
    const a = numbers.toString();
    const parts = numbers.split(number[2]);
    const antraDalis = parts[1].split(createPhoneNumber[2]);
-console.log(antraDalis);
+// console.log(antraDalis);
     return numbers;
 }
 
 
-console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), "(123) 456-7890");
+// console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), "(123) 456-7890");
 // console.log(createPhoneNumber([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]), "(111) 111-1111");
 // console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), "(123) 456-7890");
 
@@ -320,3 +320,46 @@ console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), "(123) 456-7890")
 //       .split(', ');           // atskiriam ( per kableli, tarpa). Jau teksta esam pasiruose
 //   console.log(parts);
 //   console.log(names);
+console.log('------------alphabet--------------');
+
+// const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+// let sum = 0;
+// function alphabetPosition(text) {
+//   for (i = 0; i < alphabet.length - 1; i++); 
+//     // if (text === alphabet[i]);
+//     const count = alphabet[i];
+//     sum += count;
+//   return text;
+// }
+// console.log(alphabet.length);
+// console.log(sum);
+// console.log(alphabetPosition(9));
+
+
+// for (i = 0; i < alphabet.length - 1; i++); 
+// // if (text === alphabet[i]);
+// const count = alphabet[i];
+// sum += count;
+
+// console.log(sum)
+
+// sukurti cikla kuris tikrins kiekviena masyvo simboli
+// patikrinti ar tekste gauta raide yra mazoji ar didzioji
+// jei tai raide patikrinti jos pozicija abeceleje
+// jei tai neraide ignoruoti ja
+// sujungti visus rezultatus su tarpais.
+
+function alphabetPosition(text) {
+  return text;
+}
+
+function alphabetPosition(text) {
+  return text
+      .toLowerCase()                   // Convert the string to lowercase
+      .split('')                        // Split the string into an array of characters
+      .filter(char => /[a-z]/.test(char)) // Filter out any non-alphabet characters
+      .map(char => char.charCodeAt(0) - 96)  // Convert each letter to its alphabet position
+      .join(' ');                      // Join the positions with a space
+}
+
+console.log(alphabetPosition("The sunset sets at twelve o' clock."));
