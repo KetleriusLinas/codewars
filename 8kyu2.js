@@ -44,3 +44,32 @@ function finalGrade (exam, projects) {
 //     if (exam > 50 && projects >= 2) return 75;
 //     return 0;
 // }
+
+function highAndLow(numbers){
+    // susikuriam nauja, issplitinam ' ' i stringus atskirus,  map(Number) sudejo viska i maasyva
+    const numArray = numbers.split(' ').map(Number); // pasiverciam stringa skaiciu masyvu
+
+    const max = Math.max(...numArray);
+    const min = Math.min(...numArray);
+
+    return `${max} ${min}`; // isveda pirma max , paskui min
+  }
+  console.log(highAndLow('1 2 -3 4 5'));
+  
+//   function highAndLow(numbers){
+//     numbers = numbers.split(' ');
+//     return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+//   }
+
+function reverseWords(str) {
+    return str.split(' ')
+    .reverse()
+    .join(' ')
+    .trim()
+    .split('')
+    .reverse()
+    .join('')
+    .trim()
+  };
+console.log(reverseWords('laba as krbas'));
+console.log(reverseWords('apple'));
