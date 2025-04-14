@@ -363,3 +363,18 @@ function alphabetPosition(text) {
 }
 
 console.log(alphabetPosition("The sunset sets at twelve o' clock."));
+
+
+
+function solution(a, b){
+  if (a.localeCompare(b) >= 0) {
+    return b + a + b;
+  } else {
+  return a + b + a;
+}
+}
+console.log(solution('45', '1'));
+console.log(solution('13', '200'));
+console.log(solution('Soon', 'Me'));
+console.log(solution('U', 'False')); // blogai isveda
+

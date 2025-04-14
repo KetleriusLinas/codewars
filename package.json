@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "8kyu.js",
   "scripts": {
-
+    "8kyu2": "node --watch ./8kyu2.js",
     "8kyu": "node --watch ./8kyu.js",
 
 
