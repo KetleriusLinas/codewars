@@ -73,3 +73,18 @@ function reverseWords(str) {
   };
 console.log(reverseWords('laba as krbas'));
 console.log(reverseWords('apple'));
+
+console.log('-------------');
+
+
+function findShort(s){
+    const word = s.split(' ');
+    // for (const word of s)
+    for (let i = 0; i < word.length; i++)
+        
+  console.log(word);
+
+  }
+  console.log(findShort('bitcoin will take over the world'));
+//   console.log(word);
+  
