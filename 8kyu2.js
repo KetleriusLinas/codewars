@@ -74,17 +74,37 @@ function reverseWords(str) {
 console.log(reverseWords('laba as krbas'));
 console.log(reverseWords('apple'));
 
-console.log('-------------');
+console.log('-----nepadarau--------');
 
 
 function findShort(s){
     const word = s.split(' ');
-    // for (const word of s)
-    for (let i = 0; i < word.length; i++)
+    let minLength = 0;
+    let minS = '';
+    // for (let i = 0; i < word.length; i++) {
+    //   if (word[i] < minLength)
+    // }
+    
         
   console.log(word);
 
   }
   console.log(findShort('bitcoin will take over the world'));
 //   console.log(word);
+console.log('--------------');
+
+function sumMul(n,m){
+  if (n <= 0 || m <= 0) {
+    return 'INVALID'
+  }
+  let sum = 0;
+  for (let i = n; i < m; i += n) {
+    sum += i;
+
+  }
+    return sum;
+  }
+  console.log(sumMul(2, 9));
+  console.log(sumMul(3, 13));
+  console.log(sumMul(4, -7));
   
