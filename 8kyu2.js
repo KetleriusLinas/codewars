@@ -107,4 +107,144 @@ function sumMul(n,m){
   console.log(sumMul(2, 9));
   console.log(sumMul(3, 13));
   console.log(sumMul(4, -7));
-  
+console.log('-------is it even-------');
+
+
+// function testEven(n) {
+//   if (n % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   } 
+// }
+
+function testEven(n) {
+  return n % 2 === 0 ? true : false;
+}
+
+console.log(testEven(0), true, "testEven for 0");
+console.log(testEven(0.5), false, "testEven for 0.5");
+console.log(testEven(1), false, "testEven for 1");
+console.log(testEven(2), true, "testEven for 2");
+console.log(testEven(-4), true, "testEven for 2");
+
+
+
+console.log('------Will you make it?--------');
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => { // padariau klaida Daugiau Arba Lygu turejo but
+  return mpg * fuelLeft >= distanceToPump // pirma apskaiciuoji kiek gali nuvaziuoti, paskui palygini su distancija
+};
+
+console.log(zeroFuel(50, 25, 2), true);
+console.log(zeroFuel(100, 50, 1), false);
+
+function hero(bullets, dragons){
+  return bullets / 2 >= dragons
+  }
+    console.log(hero(10, 5),'->', true);
+    console.log(hero(7, 4),'->', false);
+    console.log(hero(4, 5),'->', false);
+    console.log(hero(100, 40),'->', true);
+    console.log(hero(1500, 751),'->', false);
+    console.log(hero(0, 1),'->', false);
+
+console.log('-----Drink By Profession---------');
+
+
+function getDrinkByProfession (param) {
+    param = param.toLowerCase();  
+
+       if (param === 'jabroni') {
+        return 'Patron Tequila';
+       } 
+       else if (param === 'school counselor') {
+        return 'Anything with Alcohol';
+       } 
+       else if (param === 'programmer') {
+        return 'Hipster Craft Beer';
+       } 
+       else if (param === 'bike gang member') {
+        return 'Moonshine';
+       } 
+       else if (param === 'politician') {
+        return 'Your tax dollars';
+       } 
+       else if (param === 'rapper') {
+        return 'Cristal';
+       } 
+       else {
+        return 'Beer';
+       } 
+      }
+
+
+    console.log(getDrinkByProfession("jabrOni"), '->', "Patron Tequila");
+    console.log(getDrinkByProfession("scHOOl counselor"), '->',  "Anything with Alcohol");
+    console.log(getDrinkByProfession("prOgramMer"), '->', "Hipster Craft Beer");
+    console.log(getDrinkByProfession("bike ganG member"));
+    console.log(getDrinkByProfession("poLiTiCian"), '->', "Your tax dollars");
+    console.log(getDrinkByProfession("rapper"), '->', "Cristal");
+    console.log(getDrinkByProfession("pundit"), '->', "Beer");
+    console.log(getDrinkByProfession("Pug"), '->', "Beer");
+
+console.log('-----Su destytoju--- Triple trouble------');
+
+
+ function tripleTrouble(one, two, three){
+  let ats = ''; // konstruojam atsakyma
+      for (let i = 0; i < one.length; i++)
+         ats += one[i] + two[i] + three[i]; // atsakyma konstruoja one - itasis, two - itasis , three itasis sudedami ir tt.
+       return ats; // atsakyma grazinam
+ }
+ 
+ console.log(tripleTrouble("aaa","bbb","ccc"), "abcabcabc");
+ console.log(tripleTrouble("aaaaaa","bbbbbb","cccccc"), "abcabcabcabcabcabc");
+ console.log(tripleTrouble("burn", "reds", "roll"), "brrueordlnsl");
+
+ console.log('-------clock----blogai suskaiciavau--');
+
+ function past(h, m, s){ 
+
+      return (h * 3600 + m * 60 + s) * 1000;
+ }
+
+console.log(past(0,1,1),61000);
+console.log(past(1,1,1),3661000);
+console.log(past(0,0,0),0);
+
+console.log('-------century count-------');
+
+function century(year) {
+  return Math.ceil(year / 100);
+}
+    console.log(century(1705), 18, 'Testing for year 1705');
+    console.log(century(1900), 19, 'Testing for year 1900');
+    console.log(century(1601), 17, 'Testing for year 1601');
+
+    console.log('-------Letter count ----------');
+
+    function strCount(str, letter){  
+      let count = 0;
+      for (const s of str) {
+        if (s === letter) {
+          count ++
+        }
+      }
+      return 0;
+    }
+    console.log(strCount('Hello', 'o'), 1);
+    console.log(strCount('Hello', 'l'), 2);
+    console.log(strCount('',      'z'), 0);
+
+    console.log('-------diff count ----------');
+
+    function differenceInAges(ages){
+      const min = Math.min(...ages);
+      const max = Math.max(...ages);
+      const diff = max - min;
+      return [min, max, diff];
+    }
+    console.log(differenceInAges([8, 10, 62, 74, 2, 15]));
+    
+    console.log('-----Thinkful - Number Drills: Blue and red marbles -------');
+
