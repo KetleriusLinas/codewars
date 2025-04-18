@@ -4,8 +4,11 @@
   "main": "8kyu.js",
   "scripts": {
     "destytojoCodewars": "node --watch ./destytojoCodewars.js",
+    "8kyu3": "node --watch ./8kyu3.js",
     "8kyu2": "node --watch ./8kyu2.js",
     "8kyu": "node --watch ./8kyu.js",
+    "animal": "node --watch ./mentoresOOP/animal.js",
+
 
 
     "test": "echo \"Error: no test specified\" && exit 1"

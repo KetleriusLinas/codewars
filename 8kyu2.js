@@ -230,7 +230,7 @@ function century(year) {
           count ++
         }
       }
-      return 0;
+      return count;
     }
     console.log(strCount('Hello', 'o'), 1);
     console.log(strCount('Hello', 'l'), 2);
