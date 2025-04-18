@@ -202,3 +202,41 @@ const countSheep = function (num){
   console.log(countSheep(0), "");
   console.log(countSheep(1), "1 sheep...");
   console.log(countSheep(2), "1 sheep...2 sheep...");
+
+console.log('-----------Beginner - Reduce but Grow-------------');
+
+
+function grow(x){
+    let sum = 1;
+    for (let i = 0; i < x.length; i++) {
+      sum *= x[i];      
+    }
+    return sum;
+  }
+
+  console.log(grow([1, 2, 3]), 6);
+  console.log(grow([4, 1, 1, 1, 4]), 16); 
+  console.log(grow([2, 2, 2, 2, 2, 2]), 64); 
+
+console.log('-----------------------');
+
+function buildString(...template){
+    return `I like ${template.join(', ')}!`
+  }
+
+  console.log(buildString('Cheese','Milk','Chocolate'), '-->', 'I like Cheese, Milk, Chocolate!');
+  console.log(buildString('Cheese','Milk'), "-->", 'I like Cheese, Milk!');
+  console.log(buildString('Chocolate'), "-->", 'I like Chocolate!');
+
+  function weatherInfo (temp) {
+    //   let c : convert(temp)
+      if (temp >= 0)
+        return (temp + " is freezing temperature")
+      else
+        return (temp + " is above freezing temperature")
+    }
+    
+    function convertToCelsius (temperature) {
+      var celsius = (temperature) - 32 + (5/9)
+      return temperature
+    }
