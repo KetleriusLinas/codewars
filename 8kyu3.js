@@ -40,35 +40,16 @@ function enough(cap, on, wait) {
     console.log(enough(100, 60, 50), 10);
     console.log(enough(20, 5, 5), 0);
 
-    console.log('--------------Reversed words-----------------');
+console.log('--------------Reversed words-----------------');
 
-    function reverseWords(str){
-        const s = str.split(' ');
-        let result = '';
-            for (let i = s.length - 1; i >= 0; i--) {
-        result += s[i];
-        console.log(s);
-        
-    }
-        return result // reverse those words
+    function reverseWords(str){ // sakinius skaito nuo galo i prieki.
+        const s = str.split(' ')
+        .reverse()
+        .join(' ') // sujungia teksta tarpais
+        return s;
       }
     console.log(reverseWords("hello world!"                 ,  "world! hello"))
     console.log(reverseWords("yoda doesn't speak like this" ,  "this like speak doesn't yoda"))
     console.log(reverseWords("foobar"                       ,  "foobar"))
 
-
-
-//     function stringReverse(text) {
-//         if (typeof text !== 'string') { // patikrinimas ar string tipas, jei ne isveda netinkama tipa
-//             return 'Reikalinga string tipo reiksme'
-//         }
-//     let result = ' ';
-//         result.split(' ');
-//     for (let i = text.length - 1; i >= 0; i--) {
-//         result += text[i];
-//     }
-//     return result;
-// }
-// console.log(stringReverse("hello world!"                 ,  "world! hello"))
-// console.log(stringReverse("yoda doesn't speak like this" ,  "this like speak doesn't yoda"))
-// console.log(stringReverse("foobar"                       ,  "foobar"))
+console.log('------------------------------');
