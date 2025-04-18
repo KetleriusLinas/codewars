@@ -178,3 +178,27 @@ console.log('--------------Short Long Short----------------');
   console.log(solution('13', '200'), '1320013');
   console.log(solution('Soon', 'Me'), 'MeSoonMe');
   console.log(solution('U', 'False'), 'UFalseU');
+
+  console.log('--------------Invert values--------------');
+
+  function invert(array) {
+    return array.map(array => -array);
+ }
+ 
+console.log(invert([1,2,3,4,5]))
+console.log(invert([1,-2,3,-4,5])) 
+console.log((invert([])));
+console.log((invert([0])));
+
+
+console.log('--------------IcountSheep----PABAIGTI----------');
+
+const countSheep = function (num){
+    for (let i = 0; i < num; i++) {
+        
+    }
+    return `${num}sheep...`;
+  }
+  console.log(countSheep(0), "");
+  console.log(countSheep(1), "1 sheep...");
+  console.log(countSheep(2), "1 sheep...2 sheep...");
