@@ -228,15 +228,33 @@ function buildString(...template){
   console.log(buildString('Cheese','Milk'), "-->", 'I like Cheese, Milk!');
   console.log(buildString('Chocolate'), "-->", 'I like Chocolate!');
 
-  function weatherInfo (temp) {
-    //   let c : convert(temp)
-      if (temp >= 0)
-        return (temp + " is freezing temperature")
-      else
-        return (temp + " is above freezing temperature")
+  function rainAmount(mm){
+    if (mm >= 40) {
+         return "Your plant has had more than enough water for today!"
     }
-    
-    function convertToCelsius (temperature) {
-      var celsius = (temperature) - 32 + (5/9)
-      return temperature
+    else {
+        return `You need to give your plant ${40 - mm}mm of water`
     }
+}
+console.log(rainAmount(100), "for today!", "rainAmount(100)");
+console.log(rainAmount(39), " 1mm of water", "rainAmount(39)");
+
+console.clear();
+console.log('----------The Feast of Many Beasts-------------');
+
+function feast(beast, dish) {
+    if (beast[0] === dish[0] && beast.length - 1 === dish.length - 1) {
+        return true;
+    } else {
+        return false;
+    }
+    }
+console.log(feast("great blue heron", "garlic naan"), true)
+console.log(feast("chickadee", "chocolate cake"), true)
+console.log(feast("brown bear", "bear claw"), false)
+
+const feast1 = (beast, dish) => beast[0] === dish[0] && beast.at(-1) === dish.at(-1);
+
+console.log(feast1("great blue heron", "garlic naan"), true)
+console.log(feast1("chickadee", "chocolate cake"), true)
+console.log(feast1("brown bear", "bear claw"), false)
