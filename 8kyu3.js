@@ -257,4 +257,4 @@ const feast1 = (beast, dish) => beast[0] === dish[0] && beast.at(-1) === dish.at
 
 console.log(feast1("great blue heron", "garlic naan"), true)
 console.log(feast1("chickadee", "chocolate cake"), true)
-console.log(feast1("brown bear", "bear claw"), false)
+console.log(feast1("brown bear", "bear claw"), false);
