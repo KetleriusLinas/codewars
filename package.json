@@ -4,6 +4,7 @@
   "main": "8kyu.js",
   "scripts": {
     "destytojoCodewars": "node --watch ./destytojoCodewars.js",
+    "8kyu4": "node --watch ./8kyu4.js",
     "8kyu3": "node --watch ./8kyu3.js",
     "8kyu2": "node --watch ./8kyu2.js",
     "8kyu": "node --watch ./8kyu.js",
