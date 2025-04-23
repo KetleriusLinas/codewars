@@ -109,3 +109,28 @@ const countSheep = function (num){
 console.log(countSheep(0), "");
 console.log(countSheep(1), "1 sheep...");
 console.log(countSheep(2), "1 sheep...2 sheep...");
+
+console.log(`--------duty free-----------`);
+
+function dutyFree(normPrice, discount, hol){
+    return Math.floor(hol / (normPrice * discount / 100));
+}
+console.log(dutyFree(12, 50, 1000), 166);
+console.log(dutyFree(17, 10, 500), 294);
+console.log(dutyFree(24, 35, 3000), 357);  
+
+
+console.log(`-------------------`);
+
+function arrayPlusArray(arr1, arr2) {
+  let sum1 = 0;
+  for (let i = 0; i <= arr1; i++){
+      sum1 += i;
+  }
+  console.log(sum1)
+  // return sum;
+}
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]), 21);
+console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]), -21);
+console.log(arrayPlusArray([0, 0, 0], [4, 5, 6]), 15);
+
