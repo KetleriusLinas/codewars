@@ -159,3 +159,59 @@ function distinct(a) {
 console.log(distinct([1,2]), [1,2]);
 console.log(distinct([1,1,2]), [1,2]);
 
+
+console.log(`----------------------`);
+
+function calculator(a,b,sign){
+  if (typeof a !== 'number' || typeof b !== 'number')
+    return 'unknown value';
+  let s = '';
+  switch(sign) {
+    case '+': 
+      s = a + b;
+      break;
+      case '-': 
+      s = a - b;
+      break;
+      case '*': 
+      s = a * b;
+      break;
+      case '/': 
+      s = a / b;
+      break;
+    default:
+      s = 'unknown value';
+  }
+  return s;
+};
+
+console.log(calculator(1,2, "+",  3));
+console.log(calculator(1,2, "-", -1));
+console.log(calculator(3,5, "*", 15));
+console.log(calculator(6, "h", "*", "unknown value"));
+
+console.log(`----------------------`);
+
+function getASCII(c){
+  return c.charCodeAt();
+}
+console.log(getASCII('A'),65)
+console.log(getASCII(' '),32)
+console.log(getASCII('!'),33)
+
+console.log(`----------------------`);
+
+function betterThanAverage(classPoints, yourPoints) {
+    let avg = 0;
+    for (let i = 0; i < classPoints.length; i++){
+      avg += classPoints[i];
+    }
+    const result = avg / classPoints.length;
+    return result < yourPoints;
+}
+
+// function betterThanAverage(classPoints, yourPoints) {
+//   return yourPoints > classPoints.reduce((a, b) => a + b) / classPoints.length;
+// }
+console.log(betterThanAverage([2, 3], 5), true);
+console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75), true);
