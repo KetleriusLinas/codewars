@@ -120,7 +120,7 @@ console.log(dutyFree(17, 10, 500), 294);
 console.log(dutyFree(24, 35, 3000), 357);  
 
 
-console.log(`-------------------`);
+console.log(`------Pabaigti-------------`);
 
 function arrayPlusArray(arr1, arr2) {
   let sum1 = 0;
@@ -133,4 +133,29 @@ function arrayPlusArray(arr1, arr2) {
 console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]), 21);
 console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]), -21);
 console.log(arrayPlusArray([0, 0, 0], [4, 5, 6]), 15);
+
+
+console.log(`------count monkeys-------------`);
+
+function monkeyCount(n) {
+    const arr = [];
+    for (let i = 1; i <= n; i++) { // n is a number so n.length netinka'
+      arr.push(i);
+    }
+    return arr;
+  }
+
+  
+  console.log((monkeyCount(5)), [1, 2, 3, 4, 5]);
+  console.log((monkeyCount(3)), [1, 2, 3]);
+  console.log((monkeyCount(9)), [1, 2, 3, 4, 5, 6, 7, 8, 9]);
+
+console.log(`----------------------`);
+
+function distinct(a) {
+  return [...new Set(a)];
+}
+
+console.log(distinct([1,2]), [1,2]);
+console.log(distinct([1,1,2]), [1,2]);
 
