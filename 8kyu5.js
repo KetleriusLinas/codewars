@@ -37,3 +37,18 @@ console.log(maps([1, 2, 3]), [2, 4, 6]);
 console.log(maps([4, 1, 1, 1, 4]), [8, 2, 2, 2, 8]); 
 console.log(maps([2, 2, 2, 2, 2, 2]), [4, 4, 4, 4, 4, 4]); 
 
+console.log('----------Remove elements------------');
+
+function removeEveryOther(arr){
+    let array = [];
+    for (let i = 0; i < arr.length; i+= 2) {
+        array.push(arr[i]);
+    }
+       return array;
+  }
+
+  console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']),['Hello', 'Hello Again']);
+  console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),[1, 3, 5, 7, 9]);
+  console.log(removeEveryOther([[1, 2]]), [[1, 2]]);
+
+console.log('----------Add length------------');
