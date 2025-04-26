@@ -51,4 +51,20 @@ function removeEveryOther(arr){
   console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),[1, 3, 5, 7, 9]);
   console.log(removeEveryOther([[1, 2]]), [[1, 2]]);
 
-console.log('----------Add length------------');
+console.log('----------Calculate average------------');
+
+function findAverage(array) {
+    let avg = 0;
+    if (array.length === 0) {
+        return 0;
+    }
+
+    for (const arr of array) {
+        avg += arr;        
+    }
+        return avg / array.length
+  }
+
+console.log(findAverage([1,1,1], 1));
+console.log(findAverage([1,2,3], 2));
+console.log(findAverage([1,2,3,4], 2.5));
