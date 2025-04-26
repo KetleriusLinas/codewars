@@ -68,3 +68,48 @@ function findAverage(array) {
 console.log(findAverage([1,1,1], 1));
 console.log(findAverage([1,2,3], 2));
 console.log(findAverage([1,2,3,4], 2.5));
+
+console.log('----------Add length-----------');
+
+function arrayPlusArray(arr1, arr2) {
+  const arr3 = arr1.concat(arr2);
+  let arr4 = 0;
+  for (const a of arr3) {
+    arr4 += a;
+  }
+    return arr4;
+  }
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]), 21);
+console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]), -21);
+console.log(arrayPlusArray([0, 0, 0], [4, 5, 6]), 15);
+
+
+console.log('---------------------');
+
+function howMuchILoveYou(nbPetals) {
+    if (nbPetals >= 7) {
+        return "I love you";
+    } if (3 >= nbPetals) {
+        return "a lot"
+    } else (3 > nbPetals < 7) 
+        return "not at all";
+}
+
+console.log(howMuchILoveYou(7),"I love you")
+console.log(howMuchILoveYou(3),"a lot")
+console.log(howMuchILoveYou(6),"not at all")
+
+console.log('---------------------');
+
+function sum (numbers) {
+    if (typeof numbers == !isNaN) {
+        return 0;
+    }
+    let sumNum = 0;
+    for (const s of numbers) {
+        sumNum += s;                
+    }
+    return sumNum;
+  }
+console.log(sum([]), 0);
+console.log(sum([1, 5.2, 4, 0, -1]), 9.2);
