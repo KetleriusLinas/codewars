@@ -113,3 +113,41 @@ function sum (numbers) {
   }
 console.log(sum([]), 0);
 console.log(sum([1, 5.2, 4, 0, -1]), 9.2);
+
+console.log('---------------------');
+
+// const p7 = p.filter( n => n < 7);
+// console.log(p7);
+
+
+// const arr1 = arr.filter(n => n > 2);
+
+
+function binaryCleaner(arr) {
+let arr1 = [];
+let arr2 = [];
+    for (let i = 0; i < arr.length; i++) {        
+    if (arr[i] < 2) {
+        arr1.push(arr[i]);
+    } else {
+        arr2.push(i);
+    }
+  }
+  return [arr1, arr2];
+}
+// console.log(arr1);
+// console.log(arr2);
+
+  console.log(binaryCleaner([0,1,1,2,0]),  "[ 0, 1, 1, 0 ], [ 3 ]")
+  console.log(binaryCleaner([2,2,0]), ' [ 0 ], [ 0, 1 ]');
+  console.log(binaryCleaner([0,1,2,1,0,2,1,1]), '[ 0, 1, 1, 0, 1, 1 ], [ 2, 5 ]');
+
+  console.log('---------------------');
+
+  function twoHighest(arr) {
+    return 
+  }
+
+console.log(twoHighest([]), [])
+console.log(twoHighest([15]), [15])
+console.log(twoHighest([15, 20, 20, 17]), [20, 17])
