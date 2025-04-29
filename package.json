@@ -4,17 +4,14 @@
   "main": "8kyu.js",
   "scripts": {
     "destytojoCodewars": "node --watch ./destytojoCodewars.js",
+    "8kyu6": "node --watch ./8kyu6.js",
     "8kyu5": "node --watch ./8kyu5.js",
     "8kyu4": "node --watch ./8kyu4.js",
     "8kyu3": "node --watch ./8kyu3.js",
     "8kyu2": "node --watch ./8kyu2.js",
     "8kyu": "node --watch ./8kyu.js",
     "animal": "node --watch ./mentoresOOP/animal.js",
-
-
-
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
   "keywords": [],
   "author": "",
