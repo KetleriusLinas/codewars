@@ -56,3 +56,28 @@ console.log(findShort("Let's travel abroad shall we"), 2);
 
 console.log('--------------------')
 
+function removeExclamationMarks(s) {
+  return s.replaceAll('!', '');
+  // return s.replaceAll(/[0-9]/g, "");
+}
+console.log(removeExclamationMarks("Hello! World!!"), "Hello World");
+
+// console.log(removeExclamationMarks("Hello45 World52"), "Hello World");
+
+console.log('--------Add length------------')
+
+// function addLength(str) {
+//   const s = str.split(' ');
+//   let st = [];
+//   for (const string of str) {
+//     st.push(string)
+//   }
+
+//   return s.map(s => str.length)
+//   }
+//   console.log(addLength(["apple 5", "ban 3"]));
+
+// // const dict = ['pomidoras', 'agurkas', 'bulve'];
+
+// // const dict3 = dict.map(w => w.length);
+// //     console.log(dict3); // sukuria masyva ir isveda ilgius zodiu
