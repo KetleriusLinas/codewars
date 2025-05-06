@@ -61,23 +61,14 @@ function removeExclamationMarks(s) {
   // return s.replaceAll(/[0-9]/g, "");
 }
 console.log(removeExclamationMarks("Hello! World!!"), "Hello World");
-
 // console.log(removeExclamationMarks("Hello45 World52"), "Hello World");
 
-console.log('--------Add length------------')
+console.log('--------debbugin------------')
 
-// function addLength(str) {
-//   const s = str.split(' ');
-//   let st = [];
-//   for (const string of str) {
-//     st.push(string)
-//   }
+var sortArray = function(value) {
+  return value.split('').sort((c, p) => c - p ).join('');
+}
 
-//   return s.map(s => str.length)
-//   }
-//   console.log(addLength(["apple 5", "ban 3"]));
-
-// // const dict = ['pomidoras', 'agurkas', 'bulve'];
-
-// // const dict3 = dict.map(w => w.length);
-// //     console.log(dict3); // sukuria masyva ir isveda ilgius zodiu
+console.log(sortArray('12345'),'-->', '12345');
+console.log(sortArray('54321'),'-->', '12345');
+console.log(sortArray('34251'),'-->', '12345');
